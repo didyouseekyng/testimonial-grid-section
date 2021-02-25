@@ -2,19 +2,18 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	font-family: "Barlow Semi Condensed", sans-serif;
 }
 
 body {
 	background-color: hsl(210, 46%, 95%);
 	display: grid;
-	font-family: 'Barlow Semi Condensed', sans-serif;
 	font-size: .812rem;
 	grid-template-columns: 100%;
 	margin: 0 auto;
 	padding: 3.125rem;
 	text-align: left;
 	max-width: 23.437rem;
-	/*	height: 100vh;*/
 }
 
 
@@ -23,9 +22,6 @@ h4 {
 	font-weight: 600;
 }
 
-p {
-	overflow-wrap: break-word;
-}
 
 .card {
 	border-radius: 9px;
@@ -86,22 +82,48 @@ p {
 }
 
 .card__text {
-	font-size: .875rem;
+	font-size: 1.0438rem;
+	font-weight: 600;
 	margin-bottom: .937rem;
 }
 
 .card__quote {
-	font-size: .596rem;
 	line-height: 1.6;
 	opacity: 70%;
 }
 
+.card__quote__daniel--padding {
+	font-size: .693rem;
+	font-weight: 500;
+	padding-right: .4375rem;
+}
+
+.card__quote__jonathan--padding {
+	font-size: .68125rem;
+	font-weight: 500;
+}
+
+.card__quote__jeanette--padding {
+	font-size: 0.6875rem;
+	font-weight: 500;
+}
+
+.card__quote__patrick--padding {
+	font-size: 0.677rem;
+	font-weight: 500;
+}
+
+.card__quote__kira--padding {
+	font-size: 0.675rem;
+	padding-right: 0.2rem;
+}
+
 .attribution {
 	font-size: .75rem;
-	font-weight: 400;
+	font-weight: 500;
 	margin-top: 3.125rem;
 	text-align: center;
-	padding: 10px;
+	padding: .625rem;
 }
 
 
@@ -118,10 +140,6 @@ p {
 		margin: 0 auto;
 		padding: 2.625rem;
 		min-width: 64rem;
-	}
-
-	p {
-		padding-right: .4rem;
 	}
 
 	.card--violet--one {
@@ -152,11 +170,27 @@ p {
 		margin: 0;
 	}
 
+	.card__quote__daniel--padding {
+		font-size: .6875rem;
+	}
+
+	.card__text__jeanette--margin {
+		padding-right: 0.3125rem;
+	}
+
+	.card__quote__jeanette--padding {
+		font-size: 0.70625rem;
+	}
+
+	.card__quote__patrick--padding {
+		padding-right: .599rem;
+	}
+
 	.attribution {
 		grid-area: six;
 		text-align: center;
-		margin: 30px auto 50px;
-		padding-bottom: 20px;
+		margin: 1.875rem auto 3.125rem;
+		padding-bottom: 1.25rem;
 	}
 
 }
